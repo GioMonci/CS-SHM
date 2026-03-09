@@ -1,0 +1,162 @@
+# Note: Generated Custom .gitignore w/ gpt
+
+# =========================
+# OS / misc
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+.python-version
+.ipynb_checkpoints/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+dist/
+build/
+site/
+*.egg-info/
+.eggs/
+
+# =========================
+# Logs / temp
+# =========================
+*.log
+tmp/
+temp/
+*.tmp
+
+# =========================
+# ML / experiment outputs
+# =========================
+outputs/
+runs/
+logs/
+checkpoints/
+artifacts/
+wandb/
+mlruns/
+
+# Optional: ignore large model files
+# *.pt
+# *.pth
+# *.onnx
+# *.tflite
+# *.h5
+# *.ckpt
+
+# =========================
+# Data
+# =========================
+# Ignore large/raw datasets by default
+data/raw/
+data/interim/
+data/processed/
+
+# Keep small samples and documentation
+!data/README.md
+!data/sample/
+!data/sample/**
+
+# =========================
+# VS Code / JetBrains
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# C / C++ / Embedded build artifacts
+# =========================
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+*.i
+*.ii
+*.suo
+
+# Linker / firmware outputs
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# =========================
+# STM32 / CubeIDE / Eclipse
+# =========================
+Debug/
+Release/
+.settings/
+.metadata/
+*.launch
+
+# Eclipse project metadata
+.project
+.cproject
+
+# Generated STM32Cube files that are often local-only
+**/Debug/
+**/Release/
+
+# =========================
+# Arduino / ESP32
+# =========================
+*.ino.cpp
+*.ino.cpp.d
+*.core.a
+
+# Arduino build folders
+build-*/
+esp32_build/
+arduino_build/
+
+# =========================
+# CMake / Make
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+compile_commands.json
+Makefile
+makedep*
+libtool
+aclocal.m4
+m4/
+autom4te.cache/
+
+# =========================
+# Documentation build
+# =========================
+docs/_build/
+
+# =========================
+# Secrets / local config
+# =========================
+.env
+.env.*
+secrets/
+*.key
+*.pem
